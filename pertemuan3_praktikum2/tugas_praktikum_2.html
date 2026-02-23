@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form | PBW Pertemuan 3</title>
+</head>
+<body><h1><b>Form Data Diri</b></h1>
+
+<form action="" method="GET">
+    <table border="1" cellpadding="15">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Nama:</td>
+                        <td><input type="text" name="nama"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jenis Kelamin:</td>
+                        <td>
+                            <input type="radio" name="jk" value="L"> Laki-laki
+                            <input type="radio" name="jk" value="P"> Perempuan
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hobi:</td>
+                        <td>
+                            <input type="checkbox" name="hobi" value="musik"> Musik
+                            <input type="checkbox" name="hobi" value="olahraga"> Olahraga
+                            <input type="checkbox" name="hobi" value="bermain game"> Bermain Game
+                            <input type="checkbox" name="hobi" value="memasak"> Memasak
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Pilih Kota:</td>
+                        <td>
+                            <select name="kota">
+                                <option selected>Jakarta</option>
+                                <option>Bandung</option>
+                                <option>Surabaya</option>
+                                <option>Karwawang</option>
+                                <option>Bekasi</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Upload Foto:</td>
+                        <td><input type="file" name="foto"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button type="submit"onclick="alert('Data diri anda telah terdaftar!')">Daftar</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
