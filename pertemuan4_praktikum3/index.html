@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Website Sederhana</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <div class="form-section">
+            <h2>Formulir Pendaftaran</h2>
+            <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+
+            <form>
+                <label>Nama Lengkap:</label>
+                <input type="text">
+
+                <label>Email:</label>
+                <input type="email">
+
+                <label>Password:</label>
+                <input type="password">
+
+                <label>Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <label style="text-indent: 20px;" class="option">
+                        Laki-laki
+                        <input type="radio" name="jk">
+                    </label>
+                    <label style="text-indent: 20px;" class="option">
+                        Perempuan
+                        <input type="radio" name="jk">
+                    </label>
+                </div>
+
+                <label>Hobi:</label>
+                <div class="checkbox-group">
+                    <label style="text-indent: 20px;" class="option">
+                        Musik
+                        <input type="checkbox">
+                    </label>
+                    <label style="text-indent: 20px;" class="option">
+                        Olahraga
+                        <input type="checkbox">
+                    </label>
+                    <label style="text-indent: 20px;" class="option">
+                        Membaca
+                        <input type="checkbox">
+                    </label>
+                </div>
+
+                <label>Pilih Kota:</label>
+                <select>
+                    <option>Jakarta</option>
+                    <option>Bandung</option>
+                    <option>Surabaya</option>
+                </select>
+
+                <label>Pesan Tambahan:</label>
+                <textarea placeholder="Tulis pesan di sini..."></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+        </aside>
+
+    </div>
+
+</body>
+</html>
