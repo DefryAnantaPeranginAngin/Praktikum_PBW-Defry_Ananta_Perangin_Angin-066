@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cek Nilai Mahasiswa</title>
+
+<style>
+    body{
+        font-family: Arial;
+        background-color: #f2f2f2;
+    }
+
+    .container{
+        width: 350px;
+        margin: 100px auto;
+        padding: 25px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    input{
+        width: 94%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover{
+        background-color: #2980b9;
+    }
+
+    #hasil{
+        margin-top: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Cek Nilai Mahasiswa</h2>
+
+        <label>NIM</label>
+        <input type="text" id="nim">
+
+        <label>Nilai</label>
+        <input type="number" id="nilai">
+
+        <button onclick="cekNilai()">Cek Nilai</button>
+
+        <p id="hasil"></p>
+    </div>
+
+    <script>
+        function cekNilai(){
+            var nim = document.getElementById("nim").value;
+            var nilai = document.getElementById("nilai").value;
+            var huruf;
+
+            if(nilai < 0 || nilai > 100){
+                document.getElementById("hasil").innerHTML = "Error: Nilai tidak valid!";
+                return;
+            }
+
+            if(nilai >= 80){
+                huruf = "A";
+            }
+            else if(nilai >= 70){
+                huruf = "B";
+            }
+            else if(nilai >= 60){
+                huruf = "C";
+            }
+            else if(nilai >= 50){
+                huruf = "D";
+            }
+            else{
+                huruf = "E";
+            }
+
+            document.getElementById("hasil").innerHTML =
+            "NIM : " + nim + "<br>" +
+            "Nilai : " + nilai + "<br>" +
+            "Huruf Mutu : " + huruf;
+        }
+
+    </script>
+</body>
+</html>
