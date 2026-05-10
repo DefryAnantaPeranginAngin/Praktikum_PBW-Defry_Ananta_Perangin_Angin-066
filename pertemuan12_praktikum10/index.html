@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktikum 10 — Pertemuan 12</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f5f5f0;
+      color: #1a1a18;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ── Back link ── */
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: #6b6b66;
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+      transition: color 0.15s;
+    }
+    .back:hover { color: #1a1a18; }
+
+    /* ── Header ── */
+    header {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #ddddd5;
+    }
+
+    .header-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #E6F1FB;
+      color: #0C447C;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    header p {
+      font-size: 0.87rem;
+      color: #6b6b66;
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888882;
+      margin-bottom: 0.65rem;
+      margin-top: 1.25rem;
+    }
+
+    /* ── List cards ── */
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    .item {
+      background: #ffffff;
+      border: 1px solid #e0e0d8;
+      border-radius: 10px;
+      padding: 0.85rem 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .item:hover {
+      border-color: #aaaaaa;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .item-left { display: flex; align-items: center; gap: 10px; }
+
+    .item-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .icon-blue   { background: #E6F1FB; }
+    .icon-purple { background: #EEEDFE; }
+    .icon-teal   { background: #E1F5EE; }
+
+    .item-title {
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 1px;
+    }
+
+    .item-sub {
+      font-size: 0.78rem;
+      color: #6b6b66;
+    }
+
+    .item-arrow {
+      font-size: 1rem;
+      color: #cccccc;
+    }
+
+    /* ── Divider inside section ── */
+    .sub-section {
+      background: #ffffff;
+      border: 1px solid #e0e0d8;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+
+    .sub-header {
+      padding: 0.65rem 1.25rem;
+      background: #f9f9f6;
+      border-bottom: 1px solid #e0e0d8;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #6b6b66;
+    }
+
+    .sub-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.12s;
+    }
+
+    .sub-item:not(:last-child) {
+      border-bottom: 1px solid #f0f0ec;
+    }
+
+    .sub-item:hover { background: #f9f9f6; }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddddd5;
+      font-size: 0.8rem;
+      color: #aaaaaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a class="back" href="../index.html">← Kembali ke Dashboard</a>
+
+    <header>
+      <span class="header-badge">Pertemuan 12</span>
+      <h1>Praktikum 10</h1>
+      <p>Pemrograman Web &nbsp;·&nbsp; 2410631170066</p>
+    </header>
+
+    <!-- Latihan 1 -->
+    <p class="section-label">Penerapan TailwindCSS - Tailwind CLI</p>
+    <div class="list">
+      <a class="item" href="TailwindCSS-CLI/tailwindcss/login.php">
+        <div class="item-left">
+          <div class="item-icon icon-blue">🐘</div>
+          <div>
+            <p class="item-title">Simple Blog</p>
+            <p class="item-sub">Membuat web blog sederhana yang menerapkan CSS Tailwind CLI</p>
+          </div>
+        </div>
+        <span class="item-arrow">→</span>
+      </a>
+    </div>
+
+    <!-- Latihan 2 -->
+    <p class="section-label">Penerapan TailwindCSS - Play CDN</p>
+    <div class="list">
+      <a class="item" href="TailwindCSS-PlayCDN/login.php">
+        <div class="item-left">
+          <div class="item-icon icon-blue">🐘</div>
+          <div>
+            <p class="item-title">Toko Buku dengan Penerapan TailwindCSS Play CDN</p>
+            <p class="item-sub">Mengubah css login.php dan nav.php pada web toko buku sehingga menerapkan CSS Tailwind Play CDN</p>
+          </div>
+        </div>
+        <span class="item-arrow">→</span>
+      </a>
+    </div>
+
+    <footer>
+      Pemrograman Web &nbsp;·&nbsp; 2410631170066
+    </footer>
+
+  </div>
+</body>
+</html>
